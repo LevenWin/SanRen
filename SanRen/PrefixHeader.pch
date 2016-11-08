@@ -1,0 +1,49 @@
+//
+//  PrefixHeader.pch
+//  SanRen
+//
+//  Created by 吴狄 on 16/9/20.
+//  Copyright © 2016年 Leven. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define BaseUrl  @"http://192.168.0.110:8081/xd/"
+#define Url(url)  [NSString stringWithFormat:@"%@%@",BaseUrl,url]
+
+
+
+typedef void (^SuccessBlock)(id obj);
+typedef void (^FailureBlock)(id obj);
+typedef void (^ErrorBlock)(id obj);
+typedef void  (^VoidBlock)(void);
+#import "DrawLayer.h"
+#import "YYImage.h"
+#import <sys/syscall.h>
+#import <objc/runtime.h>
+#import "LWImageLayer.h"
+#import "ContentTextManager.h"
+#import <UIKit/UIKit.h>
+#import "MyUIHelper.h"
+#import "CatrgoryHelper.h"
+#import "UIView+draw.h"
+#import "UIView+GaosutongExtension.h"
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "SDWebImageManager.h"
+#import "BaseViewController.h"
+#import "DaiDodgeKeyboard.h"
+#import "BaseRequest.h"
+#import "UIView+frameAdjust.h"
+#import "AppTraceManager.h"
+#import "CFuncationHelper.h"
+#import "UserModel.h"
+#import "LDRefresh.h"
+#import "DrawLayer.h"
+#import "NSString+Additions.h"
+#import "CommonFuncation.h"
+#endif /* PrefixHeader_pch */
